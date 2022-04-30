@@ -1,0 +1,165 @@
+
+/* si está utilizando alguna fuente de Google, cambie los nombres de fuente a continuación a sus fuentes.
+Cualquier espacio en el nombre de la fuente debe reemplazarse con un +.
+Las fuentes están separadas por un | */
+@importar url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+:raíz {
+  /* cambia los valores de abajo a tus colores de tu paleta */
+  --color-primario: #396E94 ;
+  --color-secundario: #E7C24F ;
+  --accent1-color: #A42212;
+  --accent2-color: blanco;
+
+  /* cambie los valores a continuación a la(s) fuente(s) elegida(s) */
+  --heading-font: "IM Fell French Canon SC";
+  --fuente de párrafo: Lato, Helvetica, sans-serif;
+
+  /* estos colores a continuación deben elegirse entre los colores de la paleta de arriba */
+  --titular-color-en-blanco: #396E94; /* titulares sobre fondo blanco */
+  --título-color-sobre-color: blanco; /* titulares sobre un fondo de color */
+  --párrafo-color-en-blanco: #396E94; /* texto de párrafo sobre fondo blanco */
+  --párrafo-color-sobre-color: blanco; /* texto de párrafo sobre fondo de color */
+  --párrafo-fondo-color: #396E94 ;
+  --nav-enlace-color: #396E94;
+  --nav-fondo-color: #D4AC0D;
+  --nav-hover-link-color: blanco;
+  --nav-hover-background-color: #396E94;
+}
+
+
+/* Mira a tu alrededor... ¡pero NO CAMBIES NADA! */
+
+cuerpo {
+  ancho máximo: 960px;
+  margen: 0 automático;
+  relleno: 4em;
+  tamaño de fuente: 18px;
+  alineación de texto: centro;
+}
+imagen {
+  bloqueo de pantalla;
+  margen: 0 automático;
+  ancho máximo: 300px;
+}
+h1, h2, h3, h4, h5, h6 {
+  familia de fuentes: var(--título-fuente);
+  color: var(--titular-color-en-blanco);
+}
+h2 {
+  alineación de texto: centro;
+}
+hora {
+  altura: 3px;
+  margen: 35px 0;
+  fondo: var(--accent1-color);
+}
+encabezado {
+  relleno: 1em;
+  alineación de texto: centro;
+  color: var(--párrafo-color-sobre-color);
+  color de fondo: var(--paragraph-background-color);
+}
+encabezado > h1, encabezado > h2 {
+  color: var(--titular-color-sobre-color);
+}
+pag {
+  familia de fuentes: var(--paragraph-font);
+  color: var(--paragraph-color);
+  relleno: 1em;
+}
+.colores {
+  ancho: 100%;
+  ancho mínimo: 350px;
+  margen: 30px automático;
+  alineación de texto: centro;
+}
+.colores th {
+  color de fondo: #999;
+}
+.colores td{
+  ancho: 25%;
+  altura: 3em;
+}
+.primario {
+  color de fondo: var(--color-primario);
+}
+.secundario {
+  color de fondo: var(--color-secundario);
+}
+.acento1 {
+  color de fondo: var(--accent1-color);
+}
+.acento2{
+  color de fondo: var(--accent2-color);
+}
+p.coloreado {
+  color de fondo: var(--paragraph-background-color);
+  color: var(--párrafo-color-sobre-color);
+}
+navegación {
+  color de fondo: var(--nav-color-de-fondo);
+  altura de línea: 3em;
+  alineación de texto: centro;
+  tamaño de fuente: 1,2 em;
+}
+navegación {
+  tipo-estilo-lista: ninguno;
+  pantalla: flexible;
+}
+navegar un {
+  relleno: 1em;
+  ancho mínimo: 120px;
+  texto-decoración: ninguno;
+  relleno: 10px;
+}
+nav a:enlace, nav a:visitado {
+  color: var(--nav-link-color);
+}
+nav a: hover {
+  color: var(--nav-hover-link-color);
+  color de fondo: var(--nav-hover-background-color);
+}
+.mapa del sitio {
+  pantalla: cuadrícula;
+  justificar-contenido: centro;
+
+  grid-template-columns: repetir (6, 15%);
+  cuadrícula-plantilla-filas: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . inicio inicio . ."
+    ". . . cima . ."
+    ". izquierda izquierda derecha derecha ."
+    "pagina2 pagina2 . . pagina3 pagina3";
+}
+.mapa del sitio > div {
+  alineación de texto: centro;
+}
+.sm-inicio {
+  área de cuadrícula: hogar;
+  color de fondo: #ccc;
+  altura de línea: 3em;
+}
+.sm-pagina2 {
+  área de cuadrícula: página2;
+  color de fondo: #ccc;
+  altura de línea: 3em;
+}
+.sm-pagina3 {
+  área de cuadrícula: página 3;
+  color de fondo: #ccc;
+  altura de línea: 3em;
+}
+.cima {
+  área de cuadrícula: superior;
+  borde izquierdo: 1px sólido;
+}
+.izquierda {
+  área de cuadrícula: izquierda;
+  borde superior: 1px sólido;
+  borde izquierdo: 1px sólido;
+}
+.derecho {
+  área de cuadrícula: derecha;
+  borde superior: 1px sólido;
+  borde derecho: 1px sólido;
+}
